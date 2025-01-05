@@ -52,14 +52,13 @@ def set_to_file(links, file):
 
 
 
-logging.basicConfig(filename='faculties_scraper.log', level=logging.INFO, 
+logging.basicConfig(filename='scraper_log.log', level=logging.INFO, 
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 
 # user input
-# todo: make two txt files named scraped and queue
-chromedriver_path = 'src/assets/chromedriver-win64/chromedriver.exe'
-instant_data_scraper_path = 'src/assets/instant_data_scraper_extension/1.2.1_0.crx'
+chromedriver_path = 'path/to/your/chromedriver.exe'
+instant_data_scraper_path = 'path/to/extension.crx'
 url = "https://books.toscrape.com/"
 
 webpage_scraper(url, chromedriver_path, instant_data_scraper_path)
