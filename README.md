@@ -2,6 +2,13 @@
 
 This project automates batch processing of URLs using the Instant Data Scraper Chrome extension. It programmatically controls the extension to extract tabular data from multiple web pages, eliminating the need for manual extension activation and data downloading for each URL.
 
+## The script will:
+
+- Read URLs from queue.txt
+- Process each URL automatically
+- Move processed URLs to crawled.txt
+- Save extracted data as CSV files
+
 ## Prerequisites
 
 - Python 3.7+
@@ -43,13 +50,6 @@ url = "your_target_url"
 ```bash
 python main.py
 ```
-
-## The script will:
-
-Read URLs from queue.txt
-Process each URL automatically
-Move processed URLs to crawled.txt
-Save extracted data as CSV files
 
 
 ## Features
