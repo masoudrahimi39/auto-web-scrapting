@@ -1,6 +1,6 @@
 # Automated Web Scraper with Instant Data Scraper Extension
 
-This project automates web scraping using Selenium WebDriver and the Instant Data Scraper Chrome extension. It's designed to automatically extract tabular data from web pages by programmatically controlling the extension.
+This project automates batch processing of URLs using the Instant Data Scraper Chrome extension. It programmatically controls the extension to extract tabular data from multiple web pages, eliminating the need for manual extension activation and data downloading for each URL.
 
 ## Prerequisites
 
@@ -36,19 +36,32 @@ instant_data_scraper_path = 'path/to/extension.crx'
 url = "your_target_url"
 ```
 
-2. Run the scraper:
+2. Add your target URLs to queue.txt, one URL per line
+
+3. Run the scraper:
 
 ```bash
 python main.py
 ```
 
-## Features
+## The script will:
 
-- Automated Chrome extension control
+Read URLs from queue.txt
+Process each URL automatically
+Move processed URLs to crawled.txt
+Save extracted data as CSV files
+
+
+## Features
+- Batch URL processing from queue.txt
+- Automated extension workflow for each URL:
+  - Extension activation
+  - Data extraction
+  - CSV download
+  - Extension closure
+- Tracking of processed URLs in crawled.txt
 - CAPTCHA detection
 - Logging system
-- File management for crawled URLs
-- Automatic CSV data extraction
 
 ## Limitations
 
@@ -63,15 +76,6 @@ python main.py
 3. Error Handling
    - Basic error handling for CAPTCHA detection
    - Limited handling for extension failures
-
-## Future Improvements
-
-1. Dynamic coordinate calculation for extension interaction
-2. Implement robust pagination handling
-3. Add retry mechanisms for failed scraping attempts
-4. Enhance error handling and recovery
-5. Add support for multiple URL processing
-6. Implement configuration file for easy customization
 
 ## Contributing
 
