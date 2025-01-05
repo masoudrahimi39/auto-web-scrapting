@@ -15,20 +15,7 @@ This project automates web scraping using Selenium WebDriver and the Instant Dat
 pip install selenium
 pip install pyautogui
 pip install pandas
-```
 
-## Project Structure
-
-```
-├── src/
-│   ├── utils.py                 # Core web scraping functionality
-│   ├── instant_data_scraper.py  # Extension automation logic
-│   └── main.py                  # Entry point and project setup
-├── assets/
-│   ├── chromedriver-win64/      # Chrome WebDriver files
-│   └── instant_data_scraper_extension/  # Extension files
-└── scraper_log.log        # Logging output
-```
 
 ## Important Note
 
