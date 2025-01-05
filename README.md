@@ -27,7 +27,7 @@ pip install pandas
 ├── assets/
 │   ├── chromedriver-win64/      # Chrome WebDriver files
 │   └── instant_data_scraper_extension/  # Extension files
-└── faculties_scraper.log        # Logging output
+└── scraper_log.log        # Logging output
 ```
 
 ## Important Note
